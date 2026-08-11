@@ -20,13 +20,17 @@ function generatePDF(){
     let skill = document.querySelector(".skill")
     let dob = document.querySelector(".dob")
     let gender = document.querySelector(".gender")
-  
+    let checkBox = document.getElementById("checkBox")
+
+       
+// button  
     let buttun = document.querySelector(".gButton")
-    buttun.addEventListener("click",()=>{
+buttun.addEventListener("click",()=>{
         const {jsPDF} = window.jspdf;
             const doc = new jsPDF();
-
+//        
 // function
+      if(checkBox.checked && name.value !="" && fatherName.value !="" && motherName.avlue !="" && martialStatus.value !="" && addr.value !="" && state.value !="" && district.value !="" && city.value !="" && email.avlue !="" && phone.value !="" && hSchool.value !="" && inter.value !="" && language.value !="" && graduation.value !="" && Tqualification.value !="" && experiance.value !="" && religion.value !="" && nationality.value !="" && skill.value !="" && dob.value !="" && gender.value != ""){
         function resume(){
         let pageWidth = doc.internal.pageSize.getWidth();
         doc.setFontSize(30)
@@ -127,6 +131,11 @@ function generatePDF(){
 
         }address()
         window.open(doc.output("bloburl"), "_blank");
-        
-    })
+     }    
+     else{
+        alert("fill full details")
+     }
+})
+    
+    
 }generatePDF()

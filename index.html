@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.3.3/pdfmake.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-    
+
         <div class="formContainer">
-            <h2  style="text-align: center;">generate certificate</h2>
+            <h2  style="text-align: center;">generate resume</h2>
+        <div class="mainForm">
+            <label>personal details</label>
         <div class="form">
             <div class="inputBox">
             <label>name</label>
@@ -33,8 +34,11 @@
             <label>martial status</label>
             <input class="martial" type="text" placeholder="write">
             </div>
-            
         </div>
+        </div>
+
+        <div class="mainForm">
+            <label>address</label>
         <div class="form">
             <div class="inputBox">
             <label>address</label>
@@ -55,8 +59,11 @@
             <label>state</label>
             <input class="state" type="text" placeholder="state">
             </div>
-
         </div>
+        </div>
+
+        <div class="mainForm">
+            <label>contact</label>
         <div class="form">
             <div class="inputBox">
             <label>mobile n.</label>
@@ -76,9 +83,11 @@
             <label>date of birth</label>
             <input class="dob" type="date">
             </div>
-
+        </div>
         </div>
 <!-- qualification -->
+        <div class="mainForm">
+        <label>qualification</label>
         <div class="form">
             <div class="inputBox">
             <label>high school</label>
@@ -100,7 +109,10 @@
             <input class="Tqualification" type="text" placeholder="tenchnical qualification">
             </div>
         </div>
-
+        </div>
+<!-- basic details -->
+        <div class="mainForm">
+        <label>basic details</label>
         <div class="form">
             <div class="inputBox">
             <label>experiance</label>
@@ -124,32 +136,17 @@
         </div>
 
 <!-- personal detail -->
-             <div class="form">
+            <div class="form">
             <div class="inputBox">
             <label>gender</label>
             <input class="gender" type="text" placeholder="gender">
             </div>
-                       
-            <!-- <div class="inputBox"> 
-            <label>religion</label>
-            <input class="religion" type="text" placeholder="religion">
-            </div>
-
-            <div class="inputBox"> 
-            <label>nationality</label>
-            <input class="nationality" type="text" placeholder="nationality">
-            </div>
-
-            <div class="inputBox"> 
-            <label>skill</label>
-            <input class="skill" type="text" placeholder="skill">
-            </div> -->
         </div>
-
+        </div>
         <div class="submit">
             <div>
-                <label>are you sure this is true</label>
-                <input class="checkbox" type="checkbox"> 
+                <label>every information is true</label>
+                <input id="checkBox" type="checkbox" value="yes"> 
             </div>
             <button class="gButton">submit</button>
         </div>

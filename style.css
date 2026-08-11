@@ -4,12 +4,20 @@
 }
 .formContainer{
     text-transform: capitalize;
+    padding: .5rem;
+}
+.mainForm{
+    padding:10px;
+}
+.mainForm label{
+    font-size: 22px;
+    font-weight:bold;
 }
 .form{
     display: flex;
-    border:1px solid red;
+    border:1px solid black;
     padding: 1rem;
-    margin: 1rem;
+    /* margin: 1rem; */
     /* flex-wrap: wrap; */
     justify-content: center;
     /* margin-inline: 1rem; */
