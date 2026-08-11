@@ -2,7 +2,162 @@
     padding: 0;
     margin: 0;
 }
+.sect1{
+    background: aliceblue;
+    margin:1rem 1rem 0px 1rem;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    box-shadow: 0px 5px 10px 0px black;
+}
+.firstB{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+}
+.firstB div{
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.pdfLogo i{
+    font-size:25px;
+}
+
+.securityInf i{
+    font-size:30px;
+}
+.securityInf p{
+    width: 50%;
+    font-size: 12px;
+}
+
+/* .secondBox */
+.secondB{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.seBA img{
+    height: 250px;
+}
+.seBB{
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.seBC img{
+    height: 300px;
+}
+.seBB button{
+    text-transform: capitalize;
+    padding: 10px;
+    width:200px;
+    border-radius:10px;
+    background-color:yellow;
+    border:none;
+    box-shadow: 0px 5px 10px 0px black;
+    animation: popup 2s ease-in infinite alternate;
+    font-weight: bold;
+}
+@keyframes popup{
+    from{
+        transform:scale(0.8);
+        transition:0.5s;
+        background:yellow;
+    }
+    to{
+        transform:scale(1);
+        transition:0.5s;
+        background-color:rgb(7, 197, 197);
+    }
+}
+
+.seBB p{
+    font-size: 15px;
+}
+
+/* sect2 */
+.sect2{
+    background: rgba(240, 248, 255, 0.801);
+    margin:0rem 1rem 0px 1rem;
+    text-transform: capitalize;
+     box-shadow: 0px 0px 0px 0px black;
+}
+.tempHead{
+    text-align: center;
+    padding: 1rem;
+}
+.tempCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card img{
+    margin: 1rem;
+    height:300px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/* sect3 */
+.sect3{
+    padding: 1rem;
+    margin: 0 1rem 0 1rem;
+    background-color: aliceblue;
+}
+.tabContainer{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    border-radius:1rem;
+    background: rgb(223, 230, 236);
+}
+.tabBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+
+.tabBox i{
+    font-size:30px;
+    /* border: 1px solid gray; */
+    background: rgb(235, 240, 245);
+    padding:10px;
+    border-radius:50%;
+}
+
+@media(max-width:850px){
+.secondB{
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+   
+}
+.seBC img{
+    display: none;
+}
+}
+
+
+/* Resume form */
 .formContainer{
+    display: none;
     text-transform: capitalize;
     padding: .5rem;
 }
@@ -41,16 +196,20 @@ input{
     align-items: center;
 }
 .submit{
-    /* align-items: center; */
     display: flex;
-    flex-direction:column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
     align-items: center;
     padding:10px;
 }
 .submit button{
     padding: 5px;
+    text-transform: capitalize;
+}
+.submit div{
+    font-size: 12px;
+    text-align: center;
 }
 @media(max-width:700px){
     .form{

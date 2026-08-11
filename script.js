@@ -1,3 +1,22 @@
+function gButton(){
+ let fgButton = document.querySelector(".fgButton")
+ let formContainer = document.querySelector(".formContainer")
+ let sect = document.querySelector(".sect")
+ let backButton = document.querySelector(".backButton")
+ fgButton.addEventListener("click",()=>{
+        formContainer.style.display = "block"
+        sect.style.display = "none"
+
+ })
+ backButton.addEventListener("click",()=>{
+        formContainer.style.display = "none"
+        sect.style.display = "block"
+
+ })
+}gButton()
+
+
+// resume form
 function generatePDF(){
     let name = document.querySelector(".name")
     let fatherName = document.querySelector(".father")
