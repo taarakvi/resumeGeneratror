@@ -100,8 +100,13 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.card img{
+.card{
+    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.74);
     margin: 1rem;
+    border-radius: 10px;
+}
+.card img{
+    
     height:300px;
     width: 250px;
     border-radius: 10px;
@@ -151,6 +156,9 @@
 }
 .seBC img{
     display: none;
+}
+.seBA img{
+    height: 200px;
 }
 }
 
