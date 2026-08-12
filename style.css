@@ -4,7 +4,7 @@
 }
 .sect1{
     background: aliceblue;
-    margin:1rem 1rem 0px 1rem;
+    /* margin:1rem 1rem 0px 1rem; */
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     box-shadow: 0px 5px 10px 0px black;
@@ -87,7 +87,7 @@
 /* sect2 */
 .sect2{
     background: rgba(240, 248, 255, 0.801);
-    margin:0rem 1rem 0px 1rem;
+    /* margin:0rem 1rem 0px 1rem; */
     text-transform: capitalize;
      box-shadow: 0px 0px 0px 0px black;
 }
@@ -107,15 +107,15 @@
 }
 .card img{
     
-    height:300px;
-    width: 250px;
+    height:250px;
+    width: 200px;
     border-radius: 10px;
     border: 1px solid black;
 }
 /* sect3 */
 .sect3{
     padding: 1rem;
-    margin: 0 1rem 0 1rem;
+    /* margin: 0 1rem 0 1rem; */
     background-color: aliceblue;
 }
 .tabContainer{
@@ -133,13 +133,11 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* border: 1px solid red; */
     padding: 1rem;
 }
 
 .tabBox i{
     font-size:30px;
-    /* border: 1px solid gray; */
     background: rgb(235, 240, 245);
     padding:10px;
     border-radius:50%;
@@ -147,7 +145,6 @@
 
 @media(max-width:850px){
 .secondB{
-    /* margin-top: 1rem; */
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -159,6 +156,18 @@
 }
 .seBA img{
     height: 200px;
+}
+}
+@media(max-width:430px){
+.securityInf p{
+    font-size: 10px;
+}
+.pdfLogo p{
+    font-size: 12px;
+}
+.tempHead p{
+   font-size: 15px;
+   font-style: italic;
 }
 }
 
