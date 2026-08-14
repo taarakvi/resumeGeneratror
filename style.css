@@ -44,6 +44,7 @@
 }
 .seBA img{
     height: 250px;
+    transition: opacity 0.5s ease;
 }
 .seBB{
     text-align: center;
@@ -52,13 +53,14 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.699);
 }
 .seBC img{
     height: 300px;
 }
 .seBB button{
     text-transform: capitalize;
-    padding: 10px;
+    padding:5px;
     width:200px;
     border-radius:10px;
     background-color:yellow;
@@ -66,6 +68,8 @@
     box-shadow: 0px 5px 10px 0px black;
     animation: popup 2s ease-in infinite alternate;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 @keyframes popup{
     from{
@@ -82,6 +86,9 @@
 
 .seBB p{
     font-size: 15px;
+}
+.seBB button i{
+    font-size:25px;
 }
 
 /* sect2 */
@@ -107,8 +114,8 @@
 }
 .card img{
     
-    height:250px;
-    width: 200px;
+    height:300px;
+    width: 250px;
     border-radius: 10px;
     border: 1px solid black;
 }
