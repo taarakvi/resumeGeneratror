@@ -15,7 +15,7 @@ function gButton(){
  })
 
 // image chnager
-let img = ["IMG/ChatGPT Image Aug 11, 2026, 02_52_33 PM.png","IMG/ChatGPT Image Aug 11, 2026, 02_08_38 PM.png"]
+let img = ["IMG/ChatGPT Image Aug 11, 2026, 02_52_33 PM.png","IMG/ChatGPT Image Aug 11, 2026, 02_08_38 PM.png","IMG/pic2.jpg","IMG/pic3.jpg"]
 let frontImg1 = document.getElementById("frontImg1")
 let index = 0;
 setInterval(()=>{
@@ -23,10 +23,10 @@ setInterval(()=>{
         if(index >= img.length){
                 index = 0;
         }
+        
         frontImg1.src = img[index];
 
-},2000);
-
+},3000);
 }gButton()
 
 
